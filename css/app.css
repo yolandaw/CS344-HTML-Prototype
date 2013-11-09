@@ -1,0 +1,61 @@
+.username {
+	display: inline-block;
+	float: right;
+}
+
+.deck-review {
+	text-align: center;
+}
+
+.review-timer {
+	border: none;
+	width: 3em;
+	float: left;
+}
+
+.review-timer-pause-button {
+	float: left;
+}
+
+.review-screen-menu-right {
+	float: right;
+}
+
+.cards td, .cards th {
+	padding: 0 1em;
+}
+
+.cards td, .cards th {
+	border: 1px solid #787878;
+}
+
+.deck-list {
+	width: 100%;
+	border: 1px solid #cdcdcd;
+}
+
+.deck-list td {
+
+	padding: 1em;
+}
+
+.deck-screen-left {
+	float: left;
+}
+
+.deck-screen-right {
+	float: right;
+}
+
+.stats-graph {
+	width: 60%;
+	height: 60%;
+}
+
+.deck-page-info {
+	width: 20em;
+}
+
+.sync-icon {
+	background: #00FF00;
+}
