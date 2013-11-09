@@ -1,3 +1,53 @@
+.window {
+	width: 80em;
+	height: 60em;
+	margin: auto auto;
+	border: 1px solid #ababab;
+	border-radius: 0.3em;
+}
+
+.window-title-bar {
+	height: 2em;
+	background: #dedede;
+}
+
+.window-title {
+	font-size: 1.1em;
+	padding-left: 0.5em;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 2em;
+}
+
+.window-controls {
+	display: inline-block;
+	float: right;
+}
+
+.window-min, .window-max, .window-close {
+	border: 1px solid #ababab;
+	width: 1.5em;
+	height: 1.5em;
+	display: inline-block;
+	border-radius: 100%;
+	text-align: center;
+	color: #000;
+}
+
+.window-min:hover, .window-max:hover, .window-close:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+.window-menu-bar {
+	border-radius: 0;
+	border-left: 0;
+	border-right: 0;
+
+}
+
+
+
 .username {
 	display: inline-block;
 	float: right;
@@ -58,4 +108,6 @@
 
 .sync-icon {
 	background: #00FF00;
+	display: inline-block;
+	border-radius: 100%;
 }
