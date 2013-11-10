@@ -53,6 +53,69 @@
 	float: right;
 }
 
+.sync-icon {
+	background: #00FF00;
+	display: inline-block;
+	border-radius: 100%;
+}
+
+
+
+
+.tree {
+	margin-left: 1em;
+	font-size: 2em;
+}
+
+.tree, .tree ul {
+	list-style-type: none;
+	margin-left: 0 0 0 1em;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.tree li{
+  margin: 0;
+  padding: 0 1em;  
+  position: relative;   
+}
+  
+.tree li::before, .tree li::after{
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+/* horizontal line on inner list items */
+.tree li::before{
+  border-top: 1px solid #999;
+  top: 18px;
+  width: 18px;
+  height: 0;    
+}
+
+/* vertical line on list items */   
+.tree li:after{
+  border-left: 1px solid #999;
+  height: 100%;
+  width: 0px;
+  top: -18px; 
+}
+
+/* lower line on list items from the first level because they don't have parents */
+.tree > li::after{
+  top: 18px;
+}
+
+/* hide line from the last of the first level list items */
+.tree > li:last-child::after{
+  display: none;
+}
+
+
+
+
 .deck-review {
 	text-align: center;
 }
@@ -86,10 +149,10 @@
 	border-bottom: 1px solid #dddddd;
 }
 
-.deck-list td {
-
+.homescreen-search {
 	padding: 1em;
 }
+
 
 .deck-screen-left {
 	float: left;
@@ -106,10 +169,4 @@
 
 .deck-page-info {
 	width: 20em;
-}
-
-.sync-icon {
-	background: #00FF00;
-	display: inline-block;
-	border-radius: 100%;
 }
