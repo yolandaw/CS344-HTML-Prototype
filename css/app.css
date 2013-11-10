@@ -81,7 +81,9 @@
 
 .deck-list {
 	width: 100%;
-	border: 1px solid #cdcdcd;
+	border-left: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
 }
 
 .deck-list td {
