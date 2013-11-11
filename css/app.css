@@ -120,9 +120,6 @@ html {
 
 
 
-.deck-review {
-	text-align: center;
-}
 
 .review-timer {
 	border: none;
@@ -138,12 +135,23 @@ html {
 	float: right;
 }
 
+.cards {
+	float: left;
+}
 .cards td, .cards th {
 	padding: 0 1em;
+	text-align: center;
 }
 
-.cards td, .cards th {
-	border: 1px solid #787878;
+.question {
+	display: block;
+	font-size: 3em;
+	text-align: center;
+	height: 12em;
+}
+
+.show-answer-btn {
+	float: right;
 }
 
 .deck-list {
