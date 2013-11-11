@@ -184,3 +184,19 @@ html {
 .deck-page-info {
 	width: 20em;
 }
+
+
+.deck-row {
+	border: 1px solid #dddddd;
+	overflow: auto;
+	text-align: center;
+}
+
+.deck-square {
+	border: 1px solid #dddddd;
+	display: inline-block;
+	height: 16em;
+	width: 16em;
+	margin: 1em;
+	text-align: center;
+}
