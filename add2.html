@@ -5,36 +5,35 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="css/app.css" />
+	<link rel="stylesheet" type="text/css" href="css/app2.css" 
 	<script src="js/bootstrap.js" type="text/javascript"></script>
 	<script src="js/dropdown.js" type="text/javascript"></script>
-	<title>Anki - Add Deck</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<title> Anki Flashcards</title>
 
 </head>
 <body>
 
-	<div class="panel panel-default container">
-		<div class="panel-heading">
-			<h1 class"panel-title"><strong>Anki</strong></h1> 			
-		</div>
-		<div class="well well-sm">
-			<div class="btn-group">
-				<!--DROPDOWN UNABLE TO WORK - HELPPPP!-->
-				<button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">
-					Options<span class="caret"></span>
-				</button>
-				<ul class="dropdown-menu" role="menu">
-					<li><a href="#">Action</a></li>
-					<li><a href="#">Another action</a></li>
-					<li><a href="#">Something else here</a></li>
-					<li class="divider"></li>
-					<li><a href="#">Separated link</a></li>
-				</ul>
+	<div class="window">
+		<div class="window-title-bar">
+			<span class="window-title">Anki</span>
+			<div class="window-controls">
+				<a class="window-min" href="#">-</a>
+				<a class="window-max" href="#">□</a>
+				<a class="window-close" href="#">x</a>
 			</div>
-			<span class="username">
+		</div>
+		<div class="well well-sm window-menu-bar">
+			<button type="button" class="btn btn-default">Options</button>
+			<button type="button" class="btn btn-default">Note Editor</button>
+			<button type="button" class="btn btn-default">Note Types</button>
+			<a href="#">
+				<span class="username">
 				mcbobbeth@gmail.com
 				<span class="glyphicon glyphicon-refresh sync-icon"></span>
-			</span>
-
+				</span>
+			</a>
 		</div>
 
 
@@ -44,30 +43,57 @@
 		<div class="deck-screen-left">
 
 			<br>
+			<div class="btn-toolbar" role="toolbar">
+				<div class="btn-group">
+					<button type ="button" class="btn btn-default"><b>B</b></button>
+					<button type ="button" class="btn btn-default"><i>I</i></button>
+					<button type ="button" class="btn btn-default"><u>U</u></button>
+					<button type ="button" class="btn btn-default">A<sup>2</sup></button>
+					<button type ="button" class="btn btn-default">A<sub>2</sub></button>
+					<button type ="button" class="btn btn-default btn-default-sm">
+						<!--<img src="img/removeFormat.jpg" alt="">-->
+						<b><u><i>F</i></u></b><span class="glyphicon glyphicon-chevron-right">F</span>
+					</button>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><font color="blue"<span class="glyphicon glyphicon-font"></span></font><span class="caret"></span></button>
+					<button type ="button" class="btn btn-default">[...]</button>
+					<button type ="button" class="btn btn-default"><span class="glyphicon glyphicon-paperclip"></span></button>
+					<button type ="button" class="btn btn-default"><span class="glyphicon glyphicon-record"></span></button>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></button>
+			</div>
+			</div>
+			<br>	
+			<br>
+
 			<div>
-
-				<button type ="1"><b>B</b></button>
-				<button type ="2"><i>I</i></button>
-				<button type ="3"><u>U</u></button>
-				<button type ="4">4</button>
-				<button type ="5">5</button>
-				<button type ="6">6</button>
-				<button type ="7">7</button>
-				<button type ="8">8</button>
-				<button type ="9">9</button>
-				<button type ="10">10</button>
-
-</div>
-<br>
-			Tags <input type="text" name="tags">
-
-			<br>
-
-			Front <input type="text" name="front">
+				<div class="input-group">
+		 		<span class="input-group-addon">Tags</span>
+			  	<input type="text" class="form-control">
+				</div>
+				<br>
+				<br>
+				<div class="input-group">
+  				<span class="input-group-addon">Front</span>
+  				<input type="text" class="form-control">
+				</div>
+				<br>
+				<br>
+				<div class="input-group">
+  				<span class="input-group-addon">Back</span>
+  				<input type="text" class="form-control">
+				</div>
+			</div>
 
 			<br>
+			<br>
+			<br>
 
-			Back <input type="text" name="back">
+				<div style="border:1px solid black;width:800px;height:160px;overflow-y:hidden;overflow-x:scroll;">
+				<p style="width:200%;">
+		 		<input type="image" src="img/card1.jpg" class="btText submit" alt="" height="135">
+
+
+				</p>
+			</div>
 
 			<br>
 			<br>
@@ -83,30 +109,24 @@
 
 		</div>
 
+		<div class="addScreen-right">
 
-		<div id="right" style="background-color:FFFFFF;height:300px;width:250px;float:left;text-align:center">
 			<br>
 			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-
 			Deck 
 			<select name="Japanese">
 				<option value="Japanese">Japanese</option>
-				<option value="Deck Name 2">Another Deck Name</option>
-				<option value="Deck Name 3">Yet Another Deck Name</option>
+				<option value="Deck Name 2">Kanji</option>
+				<option value="Deck Name 3">Add Deck</option>
 			</select>
 			<br>
 			<br>
 
 			Note Type
 			<select name="Type">
-				<option value="Type1">Basic</option>
-				<option value="Type2">Another Type</option>
-				<option value="Type3">Yet Another Type</option>
+				<option value="Type1">Japanese</option>
+				<option value="Type2">Basic</option>
+				<option value="Type3">Add Note Type</option>
 			</select>
 
 			<br>

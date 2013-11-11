@@ -1,0 +1,11 @@
+html {
+	font-size: 100%;
+}
+.cardImage:hover {
+	color: ##58D3F7;
+	text-decoration: none;
+}
+.addScreen-right {
+	float: right;
+	width: 30%;
+}
