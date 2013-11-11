@@ -23,25 +23,25 @@ html {
 
 
 .window {
-	width: 80em;
-	height: 60em;
+	width: 65rem;
+	height: 45rem;
 	margin: auto auto;
 	border: 1px solid #ababab;
-	border-radius: 0.3em;
-	overflow-y: scroll;
+	border-radius: 0.3rem;
+	overflow-y: auto;
 }
 
 .window-title-bar {
-	height: 2em;
+	height: 1.3rem;
 	background: #dedede;
 }
 
 .window-title {
-	font-size: 1.1em;
-	padding-left: 0.5em;
+	font-size: 1rem;
+	padding-left: 0.5rem;
 	display: inline-block;
 	vertical-align: middle;
-	line-height: 2em;
+	line-height: 1rem;
 }
 
 .window-controls {
@@ -51,8 +51,8 @@ html {
 
 .window-min, .window-max, .window-close {
 	border: 1px solid #ababab;
-	width: 1.5em;
-	height: 1.5em;
+	width: 1rem;
+	height: 1rem;
 	display: inline-block;
 	border-radius: 100%;
 	text-align: center;
@@ -88,53 +88,53 @@ html {
 
 
 .tree {
-	margin-left: 1em;
-	font-size: 2em;
+	margin-left: 1rem;
+	font-size: 2rem;
 }
 
 .tree, .tree ul {
 	list-style-type: none;
-	margin-left: 0 0 0 1em;
+	/*margin-left: 1rem;*/
 	padding: 0;
 	position: relative;
 	overflow: hidden;
 }
 
-.tree li{
+.tree li {
   margin: 0;
-  padding: 0 1em;  
+  padding: 0 1.3rem;  
   position: relative;   
 }
   
-.tree li::before, .tree li::after{
+.tree li::before, .tree li::after {
   content: '';
   position: absolute;
   left: 0;
 }
 
-/* horizontal line on inner list items */
-.tree li::before{
+/* horizontal line on inner list itrems */
+.tree li::before {
   border-top: 1px solid #999;
-  top: 18px;
+  top: 30px;
   width: 18px;
   height: 0;    
 }
 
-/* vertical line on list items */   
-.tree li:after{
+/* vertical line on list itrems */   
+.tree li:after {
   border-left: 1px solid #999;
   height: 100%;
   width: 0px;
-  top: -18px; 
+  top: -30px; 
 }
 
-/* lower line on list items from the first level because they don't have parents */
-.tree > li::after{
-  top: 18px;
+/* lower line on list itrems from the first level because they don't have parents */
+.tree > li::after {
+  top: 30px;
 }
 
-/* hide line from the last of the first level list items */
-.tree > li:last-child::after{
+/* hide line from the last of the first level list itrems */
+.tree > li:last-child::after {
   display: none;
 }
 
@@ -144,7 +144,7 @@ html {
 
 .review-timer {
 	border: none;
-	width: 3em;
+	width: 3rem;
 	float: left;
 }
 
@@ -160,15 +160,15 @@ html {
 	float: left;
 }
 .cards td, .cards th {
-	padding: 0 1em;
+	padding: 0 1rem;
 	text-align: center;
 }
 
 .question {
 	display: block;
-	font-size: 3em;
+	font-size: 3rem;
 	text-align: center;
-	height: 12em;
+	height: 12rem;
 }
 
 .show-answer-btn, .difficulty-buttons {
@@ -185,7 +185,7 @@ html {
 
 
 .homescreen-search {
-	padding: 1em;
+	padding: 1rem;
 }
 
 
@@ -196,7 +196,7 @@ html {
 }
 
 .deck-page-info {
-	width: 20em;
+	width: 20rem;
 }
 
 
@@ -209,9 +209,9 @@ html {
 .deck-square {
 	border: 1px solid #dddddd;
 	display: inline-block;
-	height: 16em;
-	width: 16em;
-	margin: 1em;
+	height: 10rem;
+	width: 10rem;
+	margin: 1rem;
 	text-align: center;
 }
 
@@ -224,4 +224,75 @@ html {
 .all-cards-main {
 	display: inline-block;
 	vertical-align: top;
+}
+
+
+.deck-stats {
+	display: inline-block;
+}
+
+.deck-stat {
+	display: block;
+	font-size: 0.6rem;
+	width: 1rem;
+	height: 1rem;
+	text-align: center;
+	border: solid 1px #222;
+	border-radius: 100%;
+	margin: 0.1rem 0.1rem 0.1rem 0;
+}
+
+
+/*other icons*/
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('rembedded-opentype'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-stack, .icon-filter, .icon-tag, .icon-pencil {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-stack:before {
+	content: "\e601";
+}
+.icon-filter:before {
+	content: "\e602";
+}
+.icon-tag:before {
+	content: "\e600";
+}
+.icon-pencil:before {
+	content: "\e603";
+}
+
+.icon-stack, .icon-filter, .icon-tag {
+
+	font-size: 2rem;
+}
+
+.icon-pencil, .icon-remove {
+	font-size: 1rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	text-align: center;
+	border: solid 1px #222;
+	border-radius: 100%;
 }
