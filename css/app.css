@@ -2,12 +2,33 @@ html {
 	font-size: 100%;
 }
 
+
+
+
+.deck-screen-left, .left {
+	float: left;
+	width: 50%;
+}
+
+.deck-screen-right, .right {
+	float: right;
+	width: 50%;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+
 .window {
 	width: 80em;
 	height: 60em;
 	margin: auto auto;
 	border: 1px solid #ababab;
 	border-radius: 0.3em;
+	overflow-y: scroll;
 }
 
 .window-title-bar {
@@ -168,13 +189,6 @@ html {
 }
 
 
-.deck-screen-left {
-	float: left;
-}
-
-.deck-screen-right {
-	float: right;
-}
 
 .stats-graph {
 	width: 60%;
@@ -199,4 +213,15 @@ html {
 	width: 16em;
 	margin: 1em;
 	text-align: center;
+}
+
+.all-cards-sidebar {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.all-cards-main {
+	display: inline-block;
+	vertical-align: top;
 }

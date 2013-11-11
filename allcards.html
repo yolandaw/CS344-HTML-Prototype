@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/app.css" />
+	<script src="js/bootstrap.js" type="text/javascript"></script>
+	<script src="js/dropdown.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<title> Anki Flashcards</title>
+
+</head>
+<body>
+	<div class="window">
+		<div class="window-title-bar">
+			<span class="window-title">Anki</span>
+			<div class="window-controls">
+				<a class="window-min" href="#">-</a>
+				<a class="window-max" href="#">□</a>
+				<a class="window-close" href="#">x</a>
+			</div>
+		</div>
+		<div class="well well-sm window-menu-bar">
+			<button type="button" class="btn btn-default">Options</button>
+			<button type="button" class="btn btn-default">Note Editor</button>
+			<button type="button" class="btn btn-default">Note Types</button>
+			<a href="#">
+				<span class="username">
+				mcbobbeth@gmail.com
+				<span class="glyphicon glyphicon-refresh sync-icon"></span>
+				</span>
+			</a>
+		</div>
+
+		<div class="panel-body">
+			<a href="homescreen.html">
+				<button type="button" class="btn btn-default">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					back
+				</button>
+			</a>
+
+			<h2>Note/Card Browser</h2>
+
+			<div class="all-cards-sidebar">
+				<h3>Filters</h3>
+				<a href="#">Whole Collection</a><br>
+				<a href="#">Current Deck</a><br>
+				<a href="#">Starred</a><br>
+
+				<div class="panel panel-default">
+					<div class="panel-heading">By Deck</div>
+					<ul>
+						<li>French</li>
+						<li>Japanese
+							<ul>
+								<li>Japanese Ch. 1</li>
+								<li>Japanese Ch. 2</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading">By Tag</div>
+					<ul>
+						<li>similar words</li>
+						<li>hard</li>
+					</ul>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading">By State</div>
+					<ul>
+						<li>new</li>
+						<li>learning</li>
+						<li>review</li>
+						<li>due</li>
+						<li>suspended</li>
+						<li>leech</li>
+					</ul>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading">By Time</div>
+					<ul>
+						<li>Added Today</li>
+						<li>Studied Today</li>
+						<li>Again Today</li>
+					</ul>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading">By Note Type</div>
+					<strong>Built-in</strong>
+					<ul>
+						<li>Basic</li>
+						<li>Basic (and reversed card)</li>
+						<li>Basic (and optional reversed card)</li>
+						<li>Cloze</li>
+					</ul>
+
+					<strong>Custom</strong>
+					<ul>
+						<li>Japanese</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="all-cards-main">
+
+
+
+				<!-- search box -->
+				<div class="row homescreen-search">
+					<div class="col-lg-6">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search">
+							<div class="input-group-btn">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Decks <span class="caret"></span></button>
+								<ul class="dropdown-menu pull-right">
+									<li><a href="#">Decks</a></li>
+									<li><a href="#">Cards</a></li>
+								</ul>
+							</div><!-- /btn-group -->
+						</div><!-- /input-group -->
+					</div><!-- /.col-lg-6 -->
+				</div><!-- /.row -->
+
+				<div class="all-cards-notes">
+					<div class="all-cards-notes-buttons">
+						<strong>Notes</strong>
+						<button type="button" class="btn btn-default">Add Note</button>
+						<div class="btn-group">
+							<button type="button" class="btn btn-default">Change Note Type</button>
+ 							<button type="button" class="btn btn-default">Mark</button>
+							<button type="button" class="btn btn-default">Add Tags</button>
+							<button type="button" class="btn btn-default">Remove Tags</button>
+							<button type="button" class="btn btn-default">Delete</button>
+						</div>
+					</div>
+
+					<table>
+						<th>
+							<td>ID</td>
+							<td>Note Type</td>
+							<td>Sort Field</td>
+							<td>Japanese</td>
+							<td>English</td>
+						</th>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>language</td>
+								<td>こんにちは</td>
+								<td>こんにちは</td>
+								<td>hello</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>language</td>
+								<td>こんばんは</td>
+								<td>こんばんは</td>
+								<td>good evening</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>language</td>
+								<td>お休みなさい</td>
+								<td>お休みなさい</td>
+								<td>good night</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+
+				<div class="all-cards-cards">
+					<div class="all-cards-notes-buttons">
+						<strong>Cards</strong>
+						<div class="btn-group">
+							<button type="button" class="btn btn-default">Info</button>
+ 							<button type="button" class="btn btn-default">Suspend</button>
+							<button type="button" class="btn btn-default">Change Deck</button>
+							<!-- insert icons for visual/text -->
+						</div>
+					</div>
+
+					<table>
+						<th>
+							<td>Card Front</td>
+							<td>Card Back</td>
+							<td>Card Type</td>
+							<td>Due</td>
+							<td>Created</td>
+							<td>Deck</td>
+						</th>
+						<tbody>
+							<tr>
+								<td></td>
+								<td></td>
+								<td>FromJapanese</td>
+								<td>2013-11-15</td>
+								<td>2013-11-12</td>
+								<td>Japanese Ch. 1</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td>ToJapanese</td>
+								<td>2013-11-15</td>
+								<td>2013-11-12</td>
+								<td>Japanese Ch. 1</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+				<div class="all-cards-notes-fields panel panel-default">
+					<div class="panel-heading">Note fields</div>
+					<div class="panel-body">
+						<!-- insert styling thing -->
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<label for="japanese" class="col-sm-2 control-label">Japanese</label>
+								<div class="col-sm-10">
+							    	<input type="text" class="form-control" id="japanese">
+								</div>
+							</div>				
+							<div class="form-group">
+								<label for="english" class="col-sm-2 control-label">English</label>
+								<div class="col-sm-10">
+							    	<input type="text" class="form-control" id="english">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="audio" class="col-sm-2 control-label">Audio</label>
+								<div class="col-sm-10">
+							    	<input type="text" class="form-control" id="audio">
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</div>
+				
+				<p>Note type: language</p>
+				<button type="button" class="btn btn-default">Edit Note Types</button>
+
+			</div>
+
+
+
+
+
+		</div>
+
+	</div>
+</body>	
+</html>
