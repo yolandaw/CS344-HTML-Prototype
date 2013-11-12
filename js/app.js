@@ -106,6 +106,11 @@ $(document).ready(function(){
     $('#review-card-highlight').hide();
 
     $('#show-answer-btn-q2').hide();
+    $('#show-answer-btn-q3').hide();
+
+    $('#tq1answer').hide();
+    $('#tquestion2').hide();
+    $('#tquestion3').hide();
 
 
 
@@ -113,17 +118,30 @@ $(document).ready(function(){
     $('#show-answer-btn-q1').on(
         'click',
         function() {
+
+            $('#tq1question, #tq1answer').toggle();
             $('#q1question, #q1answer').toggle();
             $('#show-answer-btn-q1').toggle();
             $('#difficulty-btn-q1').toggle();
+            $('#tdifficulty-btn-q1').toggle();
         }
     );    
     $('#show-answer-btn-q2').on(
         'click',
         function() {
+            $('#tq2question, #tq2answer').toggle();
             $('#q2question, #q2answer').toggle();
             $('#show-answer-btn-q2').toggle();
             $('#difficulty-btn-q2').toggle();
+            $('#tdifficulty-btn-q2').toggle();
+        }
+    );   
+    $('#show-answer-btn-q3').on(
+        'click',
+        function() {
+            $('#tq3question, #tq3answer').toggle();
+            $('#show-answer-btn-q3').toggle();
+            $('#tdifficulty-btn-q3').toggle();
         }
     );
 
@@ -147,6 +165,28 @@ $(document).ready(function(){
 
         }
     );
+
+
+    $('#tdifficulty-btn-q1 button').on(
+        'click',
+        function() {
+            $('#tquestion1, #tquestion2').toggle();
+            $('#tq2question').show();
+            $('#tq2answer').hide();
+            $('#tdifficulty-btn-q1, #show-answer-btn-q2').toggle();
+        }
+    );
+    $('#tdifficulty-btn-q2 button').on(
+        'click',
+        function() {
+            $('#tquestion2, #tquestion3').toggle();
+            $('#tq3question').show();
+            $('#tq3answer').hide();
+            $('#tdifficulty-btn-q2, #show-answer-btn-q3').toggle();
+
+        }
+    );
+
 
 // individual difficulty buttons for q1, which toggle the images of the card piles
     $('#new-card-hard').on(
