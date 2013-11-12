@@ -108,6 +108,7 @@ $(document).ready(function(){
     $('#show-answer-btn-q2').hide();
 
 
+
 // show answer buttons for q1 and q2
     $('#show-answer-btn-q1').on(
         'click',
@@ -271,3 +272,20 @@ function editDeckNameHard()
 {
     var x=prompt("Rename Deck", "Hard questions")
 }
+
+$(document).ready(function(){
+
+    $('#edit-success').hide();
+    $('#edit-success-btn').on(
+        'click',
+        function() {
+            $('#edit-success').show();
+                window.setTimeout(function () {
+        location.href = "review1.html";
+    }, 500)
+        }
+    );
+
+
+
+});

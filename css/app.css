@@ -396,3 +396,8 @@ html {
 .add-deck-icon span {
 	font-size: 3rem;
 }
+
+.edit-body {
+	height: 39.5rem;
+	overflow-y: auto;
+}
