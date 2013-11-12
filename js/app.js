@@ -273,6 +273,14 @@ function editDeckNameHard()
     var x=prompt("Rename Deck", "Hard questions")
 }
 
+
+function goBack()
+{
+    window.history.back()
+}
+
+
+
 $(document).ready(function(){
 
     $('#edit-success').hide();
