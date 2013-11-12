@@ -193,7 +193,7 @@ html {
 }
 
 .homescreen-search .input-group {
-	width: 94%;
+	width: 90%;
 	float: left;
 	padding-right: 1em;
 }
@@ -209,7 +209,6 @@ html {
 
 
 .deck-row {
-	border: 1px solid #dddddd;
 	overflow: auto;
 	text-align: center;
 }
