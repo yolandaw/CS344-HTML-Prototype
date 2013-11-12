@@ -124,6 +124,8 @@ $(document).ready(function(){
             $('#show-answer-btn-q1').toggle();
             $('#difficulty-btn-q1').toggle();
             $('#tdifficulty-btn-q1').toggle();
+            startstop();
+            $('#startstoptimer').toggle();
         }
     );    
     $('#show-answer-btn-q2').on(
@@ -134,6 +136,8 @@ $(document).ready(function(){
             $('#show-answer-btn-q2').toggle();
             $('#difficulty-btn-q2').toggle();
             $('#tdifficulty-btn-q2').toggle();
+            startstop();
+            $('#startstoptimer').toggle();
         }
     );   
     $('#show-answer-btn-q3').on(
@@ -153,6 +157,8 @@ $(document).ready(function(){
             $('#q2question').show();
             $('#q2answer').hide();
             $('#difficulty-btn-q1, #show-answer-btn-q2').toggle();
+            startstop();
+            $('#startstoptimer').toggle();
         }
     );
     $('#difficulty-btn-q2 button').on(
@@ -162,6 +168,8 @@ $(document).ready(function(){
             $('#q1question').show();
             $('#q1answer').hide();
             $('#difficulty-btn-q2, #show-answer-btn-q1').toggle();
+            startstop();
+            $('#startstoptimer').toggle();
 
         }
     );
