@@ -28,6 +28,21 @@ html {
 	margin: auto auto;
 	border: 1px solid #ababab;
 	border-radius: 0.3rem;
+	/*overflow-y: auto;*/
+}
+
+.window-all-cards {
+	width: 75rem;
+	height: 45rem;
+	margin: auto auto;
+	border: 1px solid #ababab;
+	border-radius: 0.3rem;
+	/*overflow-y: auto;*/
+}
+
+
+.window-body-scroll-panel {
+	height: 39rem;
 	overflow-y: auto;
 }
 
@@ -188,14 +203,20 @@ html {
 */
 
 
-.homescreen-search {
+.homescreen-search,.browser-search {
 	padding: 1rem;
 }
 
 .homescreen-search .input-group {
 	width: 90%;
 	float: left;
-	padding-right: 1em;
+	padding-right: 1rem;
+}
+
+.browser-search .input-group {
+	width: 38rem;
+	float: left;
+	padding-right: 1rem;
 }
 
 .stats-graph {
@@ -223,16 +244,46 @@ html {
 }
 
 .all-cards-sidebar {
-	width: 30%;
+	width: 13rem;
 	display: inline-block;
 	vertical-align: top;
+	height: 34rem;
+	padding-right: 1em;
+	overflow-y: auto;
 }
 
 .all-cards-main {
 	display: inline-block;
 	vertical-align: top;
+	width: 60rem;
 }
 
+.all-cards-notes {
+	display: inline-block;
+	padding: 0 1rem;
+}
+
+.all-cards-cards {
+	display: inline-block;
+	border-left: 1px solid #ddd;
+	padding-left: 1rem;
+	width: 27rem;
+}
+
+.all-cards-note-fields {
+	display: inline-block;
+	width: 31rem;
+	margin-left: 1rem;
+	vertical-align: middle;
+	margin-top: 1rem;
+}
+
+.all-cards-note-type {
+	display: inline-block;
+	text-align: center;
+	margin-left: 10rem;
+	vertical-align: middle;
+}
 
 .deck-stats {
 	display: inline-block;
