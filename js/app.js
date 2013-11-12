@@ -204,3 +204,14 @@ $(document).ready(function(){
 
 
 }); 
+
+// popup for creating a new deck
+
+function createNewDeck()
+{
+
+    var deck=prompt("Please enter a name for the deck");
+
+    window.location = "add.html"
+
+}
