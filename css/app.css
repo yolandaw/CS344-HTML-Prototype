@@ -10,9 +10,13 @@ html {
 	width: 50%;
 }
 
-.deck-screen-right, .right {
+.right {
 	float: right;
 	width: 50%;
+}
+
+.deck-screen-right {
+	float: right;
 }
 
 .clear {
