@@ -212,6 +212,53 @@ function createNewDeck()
 
     var deck=prompt("Please enter a name for the deck");
 
-    window.location = "add.html"
+    if (deck!=null) {
+        window.location = "add.html";
+    }
 
+}
+
+// popup for deleting a deck
+
+function removeDeck(caller)
+{
+
+    var x=confirm("Are you sure you want to delete this deck?");
+
+    // if (r==true) {
+    //     caller.style.display="none";
+    // }
+
+}
+
+// popups for editing deck names
+
+function editDeckNameJapanese100()
+{
+    var x=prompt("Rename Deck", "Japanese 100")
+}
+
+function editDeckNameJp100Ch1()
+{
+    var x=prompt("Rename Deck", "Japanese 100 Ch. 1")
+}
+
+function editDeckNameJp100Ch2()
+{
+    var x=prompt("Rename Deck", "Japanese 100 Ch. 2")
+}
+
+function editDeckNameJp100Ch3()
+{
+    var x=prompt("Rename Deck", "Japanese 100 Ch. 3")
+}
+
+function editDeckNameSimilar()
+{
+    var x=prompt("Rename Deck", "Similar-sounding words")
+}
+
+function editDeckNameHard()
+{
+    var x=prompt("Rename Deck", "Hard questions")
 }
