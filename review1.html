@@ -54,19 +54,31 @@
 
 			<div style="clear:both"></div>
 			<br/>
-			<div class="review-question" id="question">こんにちは</div>
-			<div class="review-question" id="answer">
-				こんにちは
-				<hr>
-				hello
+			<div id="question1">
+				<div class="review-question" id="q1question">こんにちは</div>
+				<div class="review-question" id="q1answer">
+					こんにちは
+					<hr>
+					hello
+				</div>
 			</div>
 
-			<br/>
+			<div id="question2">
+				<div class="review-question" id="q2question">hello</div>
+				<div class="review-question" id="q2answer">
+					hello
+					<hr>
+					こんにちは
+				</div>
+			</div>
+
 
 			<br/>
 
+			<br/>
 
-			<table class="cards">
+
+			<table id="q1-cards" class="cards">
 				<tbody>
 					<tr>
 						<td>
@@ -92,12 +104,47 @@
 					</tr>
 				</tbody>
 			</table>
-			<button id="show-answer-btn" class="btn btn-default btn-lg show-answer-btn">Show Answer</button>
 
-			<div class="difficulty-buttons">
+			<table id="q2-cards" class="cards">
+				<tbody>
+					<tr>
+						<td><img src="img/pile5.png" alt=""></td>
+						<td>
+							<img id="review-card" src="img/new-card.png" alt="">
+							<img id="review-card-after" src="img/new-after.png" alt="">
+						</td>
+						<td>
+							<img id="studying" src="img/pile4.png" alt="">
+							<img id="studying-good" src="img/studying-good.png" alt="">
+						</td>
+						<td>
+							<img id="done" src="img/pile4green.png" alt="">
+							<img id="done-after" src="img/done.png" alt="">
+						</td>
+					</tr>
+					<tr>
+						<td>New</td>
+						<td>To Review</td>
+						<td>Studying</td>
+						<td>Done</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+			<button id="show-answer-btn-q1" class="btn btn-default btn-lg show-answer-btn">Show Answer</button>
+			<button id="show-answer-btn-q2" class="btn btn-default btn-lg show-answer-btn">Show Answer</button>
+
+			<div id="difficulty-btn-q1" class="difficulty-buttons">
 				<button id="new-card-hard" class="btn btn-lg btn-warning">Hard<br/><small class="review-button-text">1 min</small></button>
 				<button id="new-card-good" class="btn btn-lg btn-warning">Good<br/><small class="review-button-text">10 mins</small></button>
 				<button id="new-card-easy" class="btn btn-lg btn-success">Easy<br/><small class="review-button-text">4 days</small></button>
+			</div>
+
+			<div id="difficulty-btn-q2" class="difficulty-buttons">
+				<button id="review-card-hard" class="btn btn-lg btn-warning">Hard<br/><small class="review-button-text"><10 mins</small></button>
+				<button id="review-card-good" class="btn btn-lg btn-success">Good<br/><small class="review-button-text">1 day</small></button>
+				<button id="review-card-easy" class="btn btn-lg btn-success">Easy<br/><small class="review-button-text">4 days</small></button>
 			</div>
 
 		</div>

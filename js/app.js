@@ -93,61 +93,114 @@ function formattime(rawtime,roundtype)
 
 $(document).ready(function(){
 
-    $('#answer').hide();
+    $('#q1answer').hide();
+    $('#q2answer').hide();
+    $('#question2').hide();
     $('.difficulty-buttons').hide();
     $('#new-card-after').hide();
     $('#studying-good').hide();
     $('#studying-hard').hide();
     $('#done-after').hide();
+    $('#show-answer-btn-q2').hide();
+    $('#q2-cards').hide();
 
-    $('#show-answer-btn').on(
+
+// show answer buttons for q1 and q2
+    $('#show-answer-btn-q1').on(
         'click',
         function() {
-            $('#question, #answer').toggle();
-            $('#show-answer-btn').toggle();
-            $('.difficulty-buttons').toggle();
+            $('#q1question, #q1answer').toggle();
+            $('#show-answer-btn-q1').toggle();
+            $('#difficulty-btn-q1').toggle();
         }
-    );
-    $('.difficulty-buttons button').on(
+    );    
+    $('#show-answer-btn-q2').on(
         'click',
         function() {
-            $('#question, #answer').toggle();
-            $('.difficulty-buttons').toggle();
-            $('#show-answer-btn').toggle();
+            $('#q2question, #q2answer').toggle();
+            $('#show-answer-btn-q2').toggle();
+            $('#difficulty-btn-q2').toggle();
+        }
+    );
+
+// difficulty buttons (hard, good, easy) for q1 and q2
+    $('#difficulty-btn-q1 button').on(
+        'click',
+        function() {
+            $('#question1, #question2').toggle();
+            $('#q2question').show();
+            $('#q2answer').hide();
+            $('#difficulty-btn-q1, #show-answer-btn-q2').toggle();
+        }
+    );
+    $('#difficulty-btn-q2 button').on(
+        'click',
+        function() {
+            $('#question1, #question2').toggle();
+            $('#q1question').show();
+            $('#q1answer').hide();
+            $('#difficulty-btn-q2, #show-answer-btn-q1').toggle();
 
         }
     );
 
-
+// individual difficulty buttons for q1, which toggle the images of the card piles
     $('#new-card-hard').on(
         'click',
         function() {
-            $('#new-card-after').show();
-            $('#new-card').hide();
-            $('#studying').hide();
-            $('#studying-hard').show();
+            $('#q1-cards #new-card-after').show();
+            $('#q1-cards #new-card').hide();
+            $('#q1-cards #studying').hide();
+            $('#q1-cards #studying-hard').show();
         }
     );
     $('#new-card-good').on(
         'click',
         function() {
-            $('#new-card-after').show();
-            $('#new-card').hide();
-            $('#studying').hide();
-            $('#studying-good').show();
+            $('#q1-cards #new-card-after').show();
+            $('#q1-cards #new-card').hide();
+            $('#q1-cards #studying').hide();
+            $('#q1-cards #studying-good').show();
         }
     );
     $('#new-card-easy').on(
         'click',
         function() {
-            $('#new-card-after').show();
-            $('#new-card').hide();
-            $('#done').hide();
-            $('#done-after').show();
+            $('#q1-cards #new-card-after').show();
+            $('#q1-cards #new-card').hide();
+            $('#q1-cards #done').hide();
+            $('#q1-cards #done-after').show();
         }
     );
 
-
+// individual difficulty buttons for q2, which toggle the images of the card piles
+    $('#review-card-hard').on(
+        'click',
+        function() {
+            $('#q2-cards #new-card-after').show();
+            $('#q2-cards #new-card').hide();
+            $('#q2-cards #studying').hide();
+            $('#q2-cards #studying-good').show();
+        }
+    );
+    $('#review-card-good').on(
+        'click',
+        function() {
+            $('#q2-cards #new-card-after').show();
+            $('#q2-cards #new-card').hide();
+            $('#q2-cards #done').hide();
+            $('#q2-cards #done-after').show();
+        }
+    );
+    $('#review-card-easy').on(
+        'click',
+        function() {
+            $('#q2-cards #new-card-after').show();
+            $('#q2-cards #new-card').hide();
+            $('#q2-cards #done').hide();
+            $('#q2-cards #done-after').show();
+        }
+    );
 
 
 }); 
