@@ -316,3 +316,7 @@ html {
 .add-export-deck {
 	font-size: 1.5rem;
 }
+
+.sign-in, .create-account {
+	padding: 0 2em;
+}
