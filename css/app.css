@@ -271,7 +271,7 @@ html {
 	font-style: normal;
 }
 
-.icon-stack, .icon-filter, .icon-tag, .icon-pencil, .icon-remove {
+.icon-stack, .icon-filter, .icon-tag, .icon-pencil, .icon-remove, .icon-globe, .icon-plus {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -301,9 +301,15 @@ html {
 .icon-remove:before {
 	content: "\e604";
 }
+.icon-globe:before {
+	content: "\e605";
+}
+.icon-plus:before {
+	content: "\e606";
+}
 
 
-.icon-stack, .icon-filter, .icon-tag {
+.home-icon-stack, .home-icon-filter, .home-icon-tag {
 
 	font-size: 2rem;
 }
@@ -325,4 +331,15 @@ html {
 
 .sign-in, .create-account {
 	padding: 0 2em;
+}
+
+.add-deck-icon {
+	width: 11rem;
+	height: 11rem;
+	font-size: 1rem;
+	margin: 1rem;
+}
+
+.add-deck-icon span {
+	font-size: 3rem;
 }
