@@ -186,12 +186,21 @@ html {
 	display: block;
 	font-size: 3rem;
 	text-align: center;
-	height: 28rem;
 }
-
 
 .show-answer-btn, .difficulty-buttons {
 	float: right;
+	margin-left: 20rem;
+}
+
+.review-panel {
+	position: relative;
+	height: 38rem;
+}
+
+.review-bottom {
+	position: absolute;
+	bottom: 0;
 }
 
 /*.deck-list {

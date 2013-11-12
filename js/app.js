@@ -95,14 +95,17 @@ $(document).ready(function(){
 
     $('#q1answer').hide();
     $('#q2answer').hide();
+    $('#q1-super-long-arrow').hide();
+    $('#q1-long-arrow').hide();
+    $('#q2-short-arrow').hide();
+    $('#q2-long-arrow').hide();
+
     $('#question2').hide();
     $('.difficulty-buttons').hide();
-    $('#new-card-after').hide();
-    $('#studying-good').hide();
-    $('#studying-hard').hide();
-    $('#done-after').hide();
+    $('#new-card').hide();
+    $('#review-card-highlight').hide();
+
     $('#show-answer-btn-q2').hide();
-    $('#q2-cards').hide();
 
 
 // show answer buttons for q1 and q2
@@ -148,28 +151,31 @@ $(document).ready(function(){
     $('#new-card-hard').on(
         'click',
         function() {
-            $('#q1-cards #new-card-after').show();
-            $('#q1-cards #new-card').hide();
-            $('#q1-cards #studying').hide();
-            $('#q1-cards #studying-hard').show();
+            $('#q1-cards #new-card').show();
+            $('#q1-cards #new-card-highlight').hide();
+            $('#q1-cards #review-card-highlight').show();
+            $('#q1-cards #review-card').hide();
+            $('#q1-long-arrow').show().delay(500).fadeOut();
         }
     );
     $('#new-card-good').on(
         'click',
         function() {
-            $('#q1-cards #new-card-after').show();
-            $('#q1-cards #new-card').hide();
-            $('#q1-cards #studying').hide();
-            $('#q1-cards #studying-good').show();
+            $('#q1-cards #new-card').show();
+            $('#q1-cards #new-card-highlight').hide();
+            $('#q1-cards #review-card-highlight').show();
+            $('#q1-cards #review-card').hide();
+            $('#q1-long-arrow').show().delay(500).fadeOut();
         }
     );
     $('#new-card-easy').on(
         'click',
         function() {
-            $('#q1-cards #new-card-after').show();
-            $('#q1-cards #new-card').hide();
-            $('#q1-cards #done').hide();
-            $('#q1-cards #done-after').show();
+            $('#q1-cards #new-card').show();
+            $('#q1-cards #new-card-highlight').hide();
+            $('#q1-cards #review-card-highlight').show();
+            $('#q1-cards #review-card').hide();
+            $('#q1-super-long-arrow').show().delay(500).fadeOut();
         }
     );
 
@@ -177,28 +183,31 @@ $(document).ready(function(){
     $('#review-card-hard').on(
         'click',
         function() {
-            $('#q2-cards #new-card-after').show();
-            $('#q2-cards #new-card').hide();
-            $('#q2-cards #studying').hide();
-            $('#q2-cards #studying-good').show();
+            $('#q1-cards #review-card').show();
+            $('#q1-cards #review-card-highlight').hide();
+            $('#q1-cards #new-card').hide();
+            $('#q1-cards #new-card-highlight').show();
+            $('#q2-short-arrow').show().delay(500).fadeOut();
         }
     );
     $('#review-card-good').on(
         'click',
         function() {
-            $('#q2-cards #new-card-after').show();
-            $('#q2-cards #new-card').hide();
-            $('#q2-cards #done').hide();
-            $('#q2-cards #done-after').show();
+            $('#q1-cards #review-card').show();
+            $('#q1-cards #review-card-highlight').hide();
+            $('#q1-cards #new-card').hide();
+            $('#q1-cards #new-card-highlight').show();
+            $('#q2-long-arrow').show().delay(500).fadeOut();
         }
     );
     $('#review-card-easy').on(
         'click',
         function() {
-            $('#q2-cards #new-card-after').show();
-            $('#q2-cards #new-card').hide();
-            $('#q2-cards #done').hide();
-            $('#q2-cards #done-after').show();
+            $('#q1-cards #review-card').show();
+            $('#q1-cards #review-card-highlight').hide();
+            $('#q1-cards #new-card').hide();
+            $('#q1-cards #new-card-highlight').show();
+            $('#q2-long-arrow').show().delay(500).fadeOut();
         }
     );
 

@@ -37,13 +37,13 @@
 		</div>
 
 
-		<div class="panel-body">
+		<div class="panel-body review-panel">
 
 			<div class="review-screen-menu">
 
 
 				<a href="deckscreen.html"><button class="btn btn-default">Quit Session</button></a>
-				<button class="btn btn-default">Edit</button>
+				<a href="editcard.html"><button class="btn btn-default">Edit</button></a>
 				
 				<div class="review-screen-menu-right">
 				<input id="clock" type="text" value="00:00" class="review-timer" readonly><input id="startstoptimer" type="button" value="Stop" onClick="startstop();" class="review-timer-pause-button btn btn-default">
@@ -77,76 +77,82 @@
 
 			<br/>
 
+			<div class="review-bottom">
 
-			<table id="q1-cards" class="cards">
-				<tbody>
-					<tr>
-						<td>
-							<img id="new-card" src="img/new-card.png" alt="">
-							<img id="new-card-after" src="img/new-after.png" alt="">
-						</td>
-						<td><img src="img/pile5.png" alt=""></td>
-						<td>
-							<img id="studying" src="img/pile4.png" alt="">
-							<img id="studying-good" src="img/studying-good.png" alt="">
-							<img id="studying-hard" src="img/studying-hard.png" alt="">
-						</td>
-						<td>
-							<img id="done" src="img/pile4green.png" alt="">
-							<img id="done-after" src="img/done.png" alt="">
-						</td>
-					</tr>
-					<tr>
-						<td>New</td>
-						<td>To Review</td>
-						<td>Studying</td>
-						<td>Done</td>
-					</tr>
-				</tbody>
-			</table>
+				<table id="q1-cards" class="cards">
+					<tbody>
+						<tr>
+							<td colspan="4">
+								<img id="q1-super-long-arrow" src="img/super-long-arrow.png" alt="">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<img id="q1-long-arrow" src="img/long-arrow.png" alt="">
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td colspan="3">
+								<img id="q2-long-arrow" src="img/long-arrow.png" alt="">
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td colspan="2">
+								<img id="q2-short-arrow" src="img/short-arrow.png" alt="">
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<img id="new-card-highlight" src="img/pile5-highlight.png" alt="">
+								<img id="new-card" src="img/pile5.png" alt="">
+							</td>
+							<td>
+								<img id="review-card-highlight" src="img/pile5-highlight.png" alt="">
+								<img id="review-card" src="img/pile5.png" alt="">
+							</td>
+							<td>
+								<img id="studying" src="img/pile4.png" alt="">
+							</td>
+							<td>
+								<img id="done" src="img/pile4green.png" alt="">
+							</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>5</td>
+							<td>4</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>New</td>
+							<td>To Review</td>
+							<td>Studying</td>
+							<td>Done</td>
+						</tr>
+					</tbody>
+				</table>
 
-			<table id="q2-cards" class="cards">
-				<tbody>
-					<tr>
-						<td><img src="img/pile5.png" alt=""></td>
-						<td>
-							<img id="review-card" src="img/new-card.png" alt="">
-							<img id="review-card-after" src="img/new-after.png" alt="">
-						</td>
-						<td>
-							<img id="studying" src="img/pile4.png" alt="">
-							<img id="studying-good" src="img/studying-good.png" alt="">
-						</td>
-						<td>
-							<img id="done" src="img/pile4green.png" alt="">
-							<img id="done-after" src="img/done.png" alt="">
-						</td>
-					</tr>
-					<tr>
-						<td>New</td>
-						<td>To Review</td>
-						<td>Studying</td>
-						<td>Done</td>
-					</tr>
-				</tbody>
-			</table>
+				<button id="show-answer-btn-q1" class="btn btn-default btn-lg show-answer-btn">Show Answer</button>
+				<button id="show-answer-btn-q2" class="btn btn-default btn-lg show-answer-btn">Show Answer</button>
+
+				<div id="difficulty-btn-q1" class="difficulty-buttons">
+					<button id="new-card-hard" class="btn btn-lg btn-warning">Hard<br/><small class="review-button-text">1 min</small></button>
+					<button id="new-card-good" class="btn btn-lg btn-warning">Good<br/><small class="review-button-text">10 mins</small></button>
+					<button id="new-card-easy" class="btn btn-lg btn-success">Easy<br/><small class="review-button-text">4 days</small></button>
+				</div>
+
+				<div id="difficulty-btn-q2" class="difficulty-buttons">
+					<button id="review-card-hard" class="btn btn-lg btn-warning">Hard<br/><small class="review-button-text"><10 mins</small></button>
+					<button id="review-card-good" class="btn btn-lg btn-success">Good<br/><small class="review-button-text">1 day</small></button>
+					<button id="review-card-easy" class="btn btn-lg btn-success">Easy<br/><small class="review-button-text">4 days</small></button>
+				</div>
 
 
-			<button id="show-answer-btn-q1" class="btn btn-default btn-lg show-answer-btn">Show Answer</button>
-			<button id="show-answer-btn-q2" class="btn btn-default btn-lg show-answer-btn">Show Answer</button>
-
-			<div id="difficulty-btn-q1" class="difficulty-buttons">
-				<button id="new-card-hard" class="btn btn-lg btn-warning">Hard<br/><small class="review-button-text">1 min</small></button>
-				<button id="new-card-good" class="btn btn-lg btn-warning">Good<br/><small class="review-button-text">10 mins</small></button>
-				<button id="new-card-easy" class="btn btn-lg btn-success">Easy<br/><small class="review-button-text">4 days</small></button>
 			</div>
-
-			<div id="difficulty-btn-q2" class="difficulty-buttons">
-				<button id="review-card-hard" class="btn btn-lg btn-warning">Hard<br/><small class="review-button-text"><10 mins</small></button>
-				<button id="review-card-good" class="btn btn-lg btn-success">Good<br/><small class="review-button-text">1 day</small></button>
-				<button id="review-card-easy" class="btn btn-lg btn-success">Easy<br/><small class="review-button-text">4 days</small></button>
-			</div>
-
 		</div>
 
 	</div>
