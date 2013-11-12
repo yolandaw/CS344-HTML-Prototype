@@ -41,7 +41,7 @@ html {
 	padding-left: 0.5rem;
 	display: inline-block;
 	vertical-align: middle;
-	line-height: 1rem;
+	line-height: 1;
 }
 
 .window-controls {
@@ -242,6 +242,14 @@ html {
 	margin: 0.1rem 0.1rem 0.1rem 0;
 }
 
+.deck-stat-review {
+	background-color: #9fc999;
+}
+
+.deck-stat-new {
+	background-color: #b8daf0;
+}
+
 
 /*other icons*/
 
@@ -256,7 +264,7 @@ html {
 	font-style: normal;
 }
 
-.icon-stack, .icon-filter, .icon-tag, .icon-pencil {
+.icon-stack, .icon-filter, .icon-tag, .icon-pencil, .icon-remove {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -270,6 +278,7 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+
 .icon-stack:before {
 	content: "\e601";
 }
@@ -282,6 +291,10 @@ html {
 .icon-pencil:before {
 	content: "\e603";
 }
+.icon-remove:before {
+	content: "\e604";
+}
+
 
 .icon-stack, .icon-filter, .icon-tag {
 
@@ -290,9 +303,15 @@ html {
 
 .icon-pencil, .icon-remove {
 	font-size: 1rem;
-	width: 1.5rem;
-	height: 1.5rem;
+	width: 100%!important;
+	height: 100%!important;
+	padding: 0.1rem 0.2rem;
 	text-align: center;
 	border: solid 1px #222;
 	border-radius: 100%;
+	color: #222;
+}
+
+.add-export-deck {
+	font-size: 1.5rem;
 }
