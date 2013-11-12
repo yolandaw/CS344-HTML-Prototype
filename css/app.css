@@ -77,6 +77,9 @@ html {
 	display: inline-block;
 	float: right;
 }
+.username a:hover {
+	text-decoration: none;
+}
 
 .sync-icon {
 	background: #00FF00;
@@ -176,20 +179,24 @@ html {
 	float: right;
 }
 
-.deck-list {
+/*.deck-list {
 	width: 100%;
 	border-left: 1px solid #dddddd;
 	border-right: 1px solid #dddddd;
 	border-bottom: 1px solid #dddddd;
 }
-
+*/
 
 
 .homescreen-search {
 	padding: 1rem;
 }
 
-
+.homescreen-search .input-group {
+	width: 94%;
+	float: left;
+	padding-right: 1em;
+}
 
 .stats-graph {
 	width: 60%;
