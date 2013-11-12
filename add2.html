@@ -92,21 +92,28 @@
 					<br>
 					<br>
 					<div class="input-group">
-						<span class="input-group-addon">Front</span>
+						<span class="input-group-addon">Japanese</span>
 						<input type="text" class="form-control">
 					</div>
 					<br>
 					<br>
 					<div class="input-group">
-						<span class="input-group-addon">Back</span>
+						<span class="input-group-addon">English</span>
 						<input type="text" class="form-control">
+					</div>
+					<br>
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon">Audio</span>
+						<p style="margin-left: 1rem"><button class="btn btn-sm btn-default">Browse</button></p>
 					</div>
 				</div>
 
 				<br>
 				<br>
 
-				<div style="border:1px solid black;width:800px;height:160px;overflow-y:hidden;overflow-x:scroll;">
+				<p><strong>Preview of Cards</strong></p>
+				<div style="border:1px solid black;width:800px;height:160px;overflow-y:hidden;overflow-x:auto;">
 					<p>
 						<input type="image" src="img/Card-Template.jpg" class="btText submit" alt="" height="135">
 
@@ -144,8 +151,11 @@
 
 				Note Type
 				<select name="Type">
-					<option value="Type1">Japanese</option>
+					<option value="Type1">language</option>
 					<option value="Type2">Basic</option>
+					<option value="Type2">Basic (and reversed card)</option>
+					<option value="Type2">Basic (and optional reversed card)</option>
+					<option value="Type2">Cloze</option>
 					<option value="Type3">------------------</option>
 					<option value="Type3">Add Note Type</option>
 				</select>
